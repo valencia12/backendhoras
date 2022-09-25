@@ -41,7 +41,6 @@ SALT_ROUNDS=10
 TOKEN_SECRET=tokenpass
 ```
 
-
 ## Running the app
 
 ```bash
@@ -54,6 +53,11 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Open API
+
+Postman:
+https://documenter.getpostman.com/view/13511065/2s83S87Aun
 
 ## Test
 
