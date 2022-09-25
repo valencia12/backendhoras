@@ -1,0 +1,45 @@
+semester;order;code;name;description
+I;1;10180;Precálculo*;
+I;2;;Optativa técnica I;Conoce los fundamentos de lógica en los que se basan los lenguajes de programación para poder construir soluciones computacionales.
+I;3;10142;Matemática discreta I;Conoce los fundamentos de lógica en los que se basan los lenguajes de programación para poder construir soluciones computacionales.
+I;4;190153;Fundamentos de programación;Aprende las características de los algoritmo y las bases para construirlos, así como tu primera experiencia con un lenguaje de programación.
+II;5;10112;Álgebra vectorial y matrices;
+II;6;10191;Calculo I;
+II;7;190154;Programación de estructuras dinámicas;Conoce las estructuras de datos y su suma importancia en la programación, y aprende a construirlas con un lenguaje de programación.
+II;8;10143;Fisica I;
+III;9;200068;Fisica I;
+III;10;10182;Calculo II;
+III;11;190175;Programación orientada a objetos;Aprende el paradigma orientado a objetos mediante un lenguaje de programación, la manera de programar más solicitada en la industria.
+III;12;190155;Base de datos;Conoce los fundamentos detrás del diseño e implementación de bases de datos y su utilidad y aplicación a contextos de la vida cotidiana.
+IV;13;200084;Electricidad y magnetismo;
+IV;14;10183;Cálculo III;
+IV;15;190156;Programación web;Adquiere los conocimientos y herramientas necesarias para el diseño e implementación de páginas web interactivas y funcionales.
+IV;16;190157;Administración de bases de datos;Conoce los fundamentos para añadir a una base de datos los elementos de administración y de seguridad necesarios para su funcionamiento
+IV;17;;Optativa humanísticosocial I;
+V;18;10141;Análisis numérico;Conoce los principales métodos numéricos implementables en un lenguaje de programación y aplicables a múltiples escenarios de ingeniería.
+V;19;190158;Redes de computadoras;Aprende los fundamentos detrás del funcionamiento de las redes de computadoras y los principios básicos para una correcta configuración
+V;20;190159;Programación de dispositivos móviles;Adquiere los conocimientos y herramientas necesarias para el diseño e implementación de aplicaciones para Android altamente interactivas
+V;21;190160;Análisis de sistemas;descripcion
+V;22;200069;Física II;Conoce las principales metologías para el análisis de un problema y el uso de esta información para el diseño de una solución computacional.
+VI;23;;Optativa humanísticosocial II;
+VI;24;190161;Análisis de algoritmo;Aprende las herramientas para medir la eficiencia de un algoritmo y poder seleccionar la opción más eficiente para un problema específico.
+VI;25;190162;Programación de artefactos;Adquiere las habilidades para programar a bajo nivel usando dispositivos y microcontroladores para la creación de aplicaciones en físico.
+VI;26;10118;Probabilidad y estadística;
+VI;27;190163;Seguridad en entornos de desarrollo;Conoce los conceptos y herramientas principales que permiten la detección de vulnerabilidades y su respectiva prevención y contención
+VII;28;190065;Arquitectura de computadoras;Conoce los componentes lógicos que conforman el hardware de una computadora, y aprende su manipulación directa mediante programación
+VII;29;190164;Técnicas de simulación en computadoras ;Conoce la metología y herramientas utilizadas en la representación de fenómenos físicos en la computadora para el análisis de casos reales
+VII;30;190165;Programación n-capas;Aprende los principios de diseño para la arquitectura de software en proyectos de desarrollo que involucren múltiples capas.
+VII;31;190176;Fundamentos de inteligencia de negocios;Adquiere las metologías principales del área de inteligencia de negocios, el enfoque analítico de bases de datos para toma de decisiones
+VII;32;;Optativa humanísticosocial III;
+VIII;33;190166;Sistemas operativos;Conoce el funcionamiento de los principales componentes de un sistema operativo y los algoritmos involucrados en su funcionamiento.
+VIII;34;190167;Programación declarativa;Aprende a programar bajo los paradigmas de programación lógica y programación funcional, y conoce sus características y aplicaciones
+VIII;35;190168;Ingeniería de software;Profundiza en el diseño y aplicación de las metodologías ágiles para la eficiencia en la administración proyectos de desarrollo de software.
+VIII;36;250055;Formulación y evaluación de proyectos;Conoce las metologías para la formulación de un proyecto de desarrollo de software y para la evaluación de su factibilidad y rentabilidad.
+IX;37;;Optativa humanísticosocial IV;
+IX;38;;Optativa técnica II;Profundiza los conocimientos adquiridos en un área específica de la carrera: seguridad, inteligencia de negocios, programación, entre otras
+IX;39;190169;Aplicaciones código abierto;Conoce las características, metologías, y particularidades legales, técnicas y económicas del desarrollo de código abierto y código libre
+IX;40;190170;Práctica profesional I;Administra un proyecto de desarrollo para un caso concreto con un cliente real, poniendo en práctica todo lo aprendido en la carrera.
+X;41;;Optativa técnica III;Profundiza los conocimientos adquiridos en un área específica de la carrera: seguridad, inteligencia de negocios, programación, entre otras.
+X;42;190171;Teoría de lenguajes de programación;Conoce las bases matemáticas para el diseño de lenguajes de programación y para la construcción de sus compiladores e intérpretes
+X;43;;Optativa humanísticosocial V;
+X;44;190172;Práctica profesional II;Profundiza en la administración de proyectos de desarrollo de software para casos concretos con clientes reales
