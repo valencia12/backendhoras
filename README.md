@@ -32,7 +32,7 @@
 $ npm install
 ```
 
-Inject the following env or add .env in the root folder with the following
+Inject the following env or add .env in the root folder with:
 ``` 
 MONGO_DB=mongo_url
 ADMIN_USER=pensum-builder
