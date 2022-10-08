@@ -26,11 +26,20 @@ export class SubjectService {
     return createSubject.save();
   }
 
+  async postCreateMultipleSubjects(subjectDto: Array<SubjectDto>): Promise<Array<Subject>> {
+    const result = this.subjectModel.insertMany(subjectDto, {ordered: true});
+    return result;
+  }
+
   async putUpdateSubject(subjectDto: SubjectDto, id: string): Promise<Subject> {
     const subject = this.subjectModel
       .findByIdAndUpdate(id, subjectDto, { returnOriginal: false })
       .exec();
     return subject;
+  }
+
+  async deleteRemoveSubject(id: string) {
+    this.subjectModel.findByIdAndDelete(id).exec();
   }
 
   async postUploadMockSyllabus(): Promise<Subject[]> {

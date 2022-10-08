@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Param,
   Post,
@@ -39,5 +40,13 @@ export class CurriculumController {
     @Param('id') id: string,
   ): Promise<CurriculumDto> {
     return this.curriculumService.putUpdateCurriculum(body, id);
+  }
+
+  @Delete(':id')
+  @UseGuards(JwtAuthGuard)
+  deleteRemoveSubject(
+    @Param('id') id: string
+  ){
+    this.curriculumService.deleteRemoveCurriculum(id);
   }
 }

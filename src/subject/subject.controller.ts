@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Param,
   Post,
@@ -28,8 +29,14 @@ export class SubjectController {
 
   @Post()
   @UseGuards(JwtAuthGuard)
-  postCreateRecord(@Body() body: SubjectDto): Promise<SubjectDto> {
+  postCreateSubjects(@Body() body: SubjectDto): Promise<SubjectDto> {
     return this.subjectService.postCreateSubject(body);
+  }
+
+  @Post('/multiple')
+  @UseGuards(JwtAuthGuard)
+  postCreateMultipleSubjects(@Body() body: Array<SubjectDto>): Promise<Array<Subject>>{
+      return this.subjectService.postCreateMultipleSubjects(body);
   }
 
   @Put(':id')
@@ -39,6 +46,14 @@ export class SubjectController {
     @Param('id') id: string,
   ): Promise<SubjectDto> {
     return this.subjectService.putUpdateSubject(body, id);
+  }
+
+  @Delete(':id')
+  @UseGuards(JwtAuthGuard)
+  deleteRemoveSubject(
+    @Param('id') id: string
+  ){
+    this.subjectService.deleteRemoveSubject(id);
   }
 
   @Get('/mock-file')

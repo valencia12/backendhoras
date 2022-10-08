@@ -35,4 +35,8 @@ export class CurriculumService {
       .exec();
     return curriculum;
   }
+
+  async deleteRemoveCurriculum(id: string) {
+    this.curriculumModel.findByIdAndDelete(id).exec();
+  }
 }
