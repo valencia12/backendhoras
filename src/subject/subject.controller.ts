@@ -12,6 +12,7 @@ import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { SubjectService } from './subject.service';
 import { SubjectDto } from './domain/subject.dto';
 import { Subject } from './domain/subject.model';
+import { SubjectMultipleDto } from './domain/subject-multiple.dto';
 
 @Controller('subjects')
 export class SubjectController {
@@ -35,7 +36,7 @@ export class SubjectController {
 
   @Post('/multiple')
   @UseGuards(JwtAuthGuard)
-  postCreateMultipleSubjects(@Body() body: Array<SubjectDto>): Promise<Array<Subject>>{
+  postCreateMultipleSubjects(@Body() body: Array<SubjectMultipleDto>): Promise<Array<Subject>>{
       return this.subjectService.postCreateMultipleSubjects(body);
   }
 

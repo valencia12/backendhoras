@@ -6,6 +6,7 @@ import { parse } from 'csv-parse';
 import { join } from 'path';
 import { Model } from 'mongoose';
 import { SubjectDto } from 'src/subject/domain/subject.dto';
+import { SubjectMultipleDto } from './domain/subject-multiple.dto';
 
 @Injectable()
 export class SubjectService {
@@ -26,8 +27,21 @@ export class SubjectService {
     return createSubject.save();
   }
 
-  async postCreateMultipleSubjects(subjectDto: Array<SubjectDto>): Promise<Array<Subject>> {
-    const result = this.subjectModel.insertMany(subjectDto, {ordered: true});
+  async postCreateMultipleSubjects(subjectDto: Array<SubjectMultipleDto>): Promise<Array<Subject>> {
+    const subjets : Array<SubjectDto> = subjectDto.map(subject  => {
+      
+      const array : Array<SubjectDto> = [];
+        subject.prerequisite.forEach(element => {
+              return array.push(subject[element]);
+        })
+
+        return {
+          ...subject,
+          prerequisite: array
+        }
+    });
+
+    const result = this.subjectModel.insertMany(subjets, {ordered: true});
     return result;
   }
 
